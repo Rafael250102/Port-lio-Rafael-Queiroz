@@ -1,0 +1,648 @@
+/*Estilização geral*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Lato", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 25px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    background: radial-gradient(ellipse , #1b2735 0%, #090a0f 100%);
+    height: 100vh;
+}
+
+.interface {
+    max-width: 1280 px;
+    margin: 0 auto;
+}
+
+.flex{
+    display: flex;
+}
+
+h2.titulo {
+    color: white;
+    font-size: 40px;
+    text-align: center;
+}
+
+h2.titulo span{
+    color: #ff7300;
+    font-size: 40px;
+}
+
+button{
+    padding: 10px 40px;
+    font-size: 25px;
+    font-weight: 1000;
+    background-color: #ff7300;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+button:hover{
+    box-shadow: 0px 0px 8px #ff7300;
+    transform: scale(1.05);
+    transition: .3s;
+}
+
+
+/*Estilizando o cabeçalho*/
+header{
+    padding: 40px 4%;
+}
+
+header > .interface {
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+}
+
+header a{
+    color: #d8d6d6; 
+    text-decoration: none; 
+    display: inline-block;
+    transition: .3s;
+}
+
+header a:hover{
+    color: #ff7300;
+    transform: scale(1.1);
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px;
+}
+
+/*Estilizando a parte de cima do site*/
+section.topo{
+    padding: 40px 4%;
+    margin-top: 70px;
+    margin-bottom: 200px;
+}
+
+section.topo .flex {
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.topo h1{
+    color: #d8d6d6;
+    font-size: 45px;
+    line-height: 45px;  
+}
+
+.topo h1 span {
+    color: #ff7300;
+    font-size: 45px;
+}
+
+.topo .textotopo p{
+    color: #fff;
+    margin: 40px 0;
+    text-align: justify;
+}
+
+.topo .imgeu img{
+    position: relative;
+    width: 450px;
+    height: 450px;
+    border-top-left-radius: 200px;
+    border-top-right-radius: 50px;
+    border-end-start-radius: 100px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 25px 25px 8px #090a0f;
+}
+
+.topo .imgeu img:hover{
+    transform: scale(1.05);
+    transition: .5s;
+}
+
+/*Estilizando sobre mim*/
+section.sobremim {
+    padding: 40px 4%;
+    margin-bottom: 150px;
+}
+
+section.sobremim .flex{
+    align-items: center;
+    gap: 60px;
+}
+
+.sobremim .textosobre {
+    color: #fff;
+}
+
+.sobremim .textosobre p{
+    margin: 20px 0;
+    text-align: justify;
+}
+
+.sobremim .textosobre h2{
+    margin-bottom: 30px ;
+}
+
+.sobremim .imgsobre img {
+    position: relative;
+    width: 500px;
+    height: 500px;
+    border-top-right-radius: 200px;
+    border-top-left-radius: 50px;
+    border-end-start-radius: 100px;
+    border-bottom-left-radius: 10px;
+    box-shadow: 25px 25px 8px #090a0f;
+}
+
+.sobremim .imgsobre img:hover{
+    transform: scale(1.05);
+    transition: .5s;
+}
+
+/*Estilizando projetos*/
+section.projetos {
+    padding: 40px 4%;
+    margin-bottom: 100px;
+}
+
+.projetos  h2{
+    margin: 50px ;
+}
+
+.textoprojetos {
+    text-align: center;
+    justify-content: center;
+    color: #fff;
+    padding: 1px;
+    margin: 50px 0;
+}    
+
+.tabela {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 150px;
+    padding: 0;
+    width: 1500px;
+    height: 500px;
+}
+
+.projeto1 {
+    flex: 1;
+    height: 100%;
+    color: rgb(226, 222, 222);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    background: linear-gradient(135deg, #ff4411, #ff6200, #ffa600);
+    border-radius: 15px;
+    transform: scale(1.25);
+    z-index: 10;
+    box-shadow: 0 0 25px 20px rgba(15, 15, 15, 0.4);
+    
+    h2 {
+        text-align: center;
+        position: relative;
+        font-size: 25px;
+        bottom: 20px;
+    }
+
+    h2::after {
+        width: 20px;
+        height: 3px;
+        background-color: rgb(226, 222, 222);
+        content: " ";
+        position: absolute;
+        bottom: -25px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .queroconhecer {
+        position: relative;
+        bottom: 15px;
+    }
+}
+
+.projeto2 {
+    flex: 1;
+    height: 100%;
+    color: rgb(226, 222, 222);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: relative;
+    background-image: linear-gradient(135deg, #ff8800, #ff7700, #ff8800);
+    border-radius: 15px;
+    transform: scale(1.15);
+    box-shadow: 0 0 25px 20px rgba(15, 15, 15, 0.3);
+
+    h2 {
+        text-align: center;
+        position: relative;
+        bottom: 20px;
+    }
+
+    h2::after {
+        width: 20px;
+        height: 3px;
+        background-color: rgb(226, 222, 222);
+        content: " ";
+        position: absolute;
+        bottom: -25px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+.projeto3 {
+    flex: 1;
+    height: 100%;
+    color: rgb(226, 222, 222);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: relative;
+    background-image: linear-gradient(80deg, #ff7f15, #ff9400, #ff7300);
+    border-radius: 15px;
+    z-index: 5;
+    transform: scale(1.15);
+    box-shadow: 0 0 25px 20px rgba(15, 15, 15, 0.3);
+
+    h2 {
+        text-align: center;
+        position: relative;
+        bottom: 20px;
+    }
+
+    h2::after {
+        width: 20px;
+        height: 3px;
+        background-color: rgb(226, 222, 222);
+        content: " ";
+        position: absolute;
+        bottom: -25px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+.projeto4 {
+    flex: 1;
+    height: 100%;
+    color: rgb(226, 222, 222);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: relative;
+    background-image: linear-gradient(135deg, #ff8800, #ff7700, #ff8800);
+    border-radius: 15px;
+    transform: scale(1.05);
+
+    h2 {
+        text-align: center;
+        position: relative;
+        bottom: 20px;
+    }
+
+    h2::after {
+        width: 20px;
+        height: 3px;
+        background-color: rgb(226, 222, 222);
+        content: " ";
+        position: absolute;
+        bottom: -25px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+.projeto5 {
+    flex: 1;
+    height: 100%;
+    color: rgb(226, 222, 222);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    position: relative;
+    background-image: linear-gradient(80deg, #ff7f15, #ff9400, #ff7300);
+    border-radius: 15px;
+    transform: scale(1.05);
+
+    h2 {
+        text-align: center;
+        position: relative;
+        bottom: 20px;
+    }
+
+    h2::after {
+        width: 20px;
+        height: 3px;
+        background-color: rgb(226, 222, 222);
+        content: " ";
+        position: absolute;
+        bottom: -25px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
+
+.imgprojetos{
+    text-align: center;
+    position: relative;
+    bottom: 40px;
+    
+    img{
+        width: 250px;
+        height: 250px;
+        border-radius: 10%;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.imggerador{
+    text-align: center;
+    position: relative;
+    bottom: 40px;
+    
+    img{
+        width: 250px;
+        height: 250px;
+        border-radius: 10%;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.imgcalculadora{
+    text-align: center;
+    position: relative;
+    bottom: 40px;
+
+    img{
+        width: 250px;
+        height: 250px;
+        border-radius: 10%;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.imgtictactoe{
+    text-align: center;
+    position: relative;
+    bottom: 40px;
+    
+    img{
+        width: 250px;
+        height: 250px;
+        border-radius: 10%;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.imgdesapegai{
+    text-align: center;
+    position: relative;
+    bottom: 40px;
+    
+    img{
+        width: 250px;
+        height: 250px;
+        border-radius: 10%;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/*Estilizando o botão quero conhecer*/
+.queroconhecer {
+   display: flex;
+   justify-content: center;
+   margin-bottom: 10px;
+
+   button {
+    width: 80%;
+    padding: 10px;
+    border-radius: 15px;
+    border: none;
+    background-color: rgba(15, 15, 15, 0.4);
+    color: rgb(15, 15, 15);
+    font-size: 17px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 8px 16px 5px rgba(15, 15, 15, 0.3);
+
+    img {
+        height: 30px;
+        margin-left: 12px;
+    }
+   }
+}
+
+.queroconhecer a{
+    display: flex;
+    text-decoration: none;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+}
+
+/*Estilizando minha formação*/
+section.formacao {
+    padding: 40px 4%;
+    margin-top: 120px;
+}
+
+section.formacao .flex{
+    align-items: center;
+    gap: 60px;
+}
+
+.formacao .textoformacao {
+    color: #fff;
+}
+
+.formacao .textoformacao p{
+    margin: 20px 0;
+    text-align: justify;
+    font-size: 30px;
+}
+
+.formacao .textoformacao h2{
+    margin-bottom: 40px ;
+}
+
+.formacao .img-formacao img {
+    position: relative;
+    width: 550px;
+    height: 600px;
+    border-top-right-radius: 200px;
+    border-top-left-radius: 50px;
+    border-end-start-radius: 100px;
+    border-bottom-left-radius: 10px;
+    box-shadow: 25px 25px 8px #090a0f;
+}
+
+.formacao .img-formacao img:hover{
+    transform: scale(1.05);
+    transition: .5s;
+}
+
+/*Estilizando o contato*/
+section .contato {
+    padding: 80px 0;
+}
+
+.contato .texto-contato{
+    color: #fff;
+    text-align: center;
+    margin-top: 250px;
+}
+.contato .texto-contato h2 span{
+    color: #ff7300;
+    display: block;
+}
+
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 40px;
+}
+
+form input, form textarea{
+    width: 100%;
+    background-color: #090a0f;
+    border: 0;
+    outline: 0;
+    padding: 20px 15px;
+    border-radius: 20px;
+    color: white;
+    font-size: 20px;
+}
+
+form textarea {
+    height: 200px;
+    resize: none;
+}
+
+form .btn-enviar {
+    margin-top: 30px;
+    text-align: center;
+}
+
+form .btn-enviar input{
+    width: 120px;
+    background-color: #ff7300;
+    color: black;
+    cursor: pointer;
+    margin-bottom: 50px;
+}
+
+button:hover, form .btn-enviar input:hover{
+    box-shadow: 0px 0px 8px #ff7300;
+    transform: scale(1.05);
+    transition: .3s;
+}
+
+/*Estilizando o rodapé*/
+footer {
+    padding: 60px 4%;
+}
+
+footer .flex{
+    justify-content: center;
+}
+
+footer .btn-sociais button{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: none;
+    background-color: #ff7300;
+    cursor: pointer;
+    margin: 0 40px;
+    transition: .3s;
+    img {
+        align-items: center;
+        justify-content: center;
+        margin: -4px;
+        margin-left: -23px;
+        width: 45px;
+        height: 45px;
+    }
+}
+
+button:hover, form .btn-sociai {
+    box-shadow: 0px 0px 8px #ff7300;
+    transform: scale(1.05);
+    transition: .3s;
+}
+
+.email p{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.email a{
+    color: white;
+    margin-left: 10px;
+    justify-content: center;
+}
+
+/*Estilizando a página sobre mim*/
+section.sobremim-topo {
+    padding: 40px 4%;
+    text-align: center;
+    color: white;
+}
+
+.sobremim-topo .sobremim-texto h1 {
+    font-size: 40px;
+} 
+
+.sobremim-topo .sobremim-texto h1 {
+    font-size: 40px;
+} 
+
+.sobremim-topo .sobremim-texto h2 span{
+    color: #ff7300;
+} 
+
+.sobremim-topo .sobremim-imgeu img {
+    position: relative;
+    align-items: center;
+    width: 250px;
+    height: 250px;
+    border-radius: 60%;
+    border: 3px solid orangered;
+    box-shadow: 10px 10px 4px #090a0f;
+}
+
+.sobremim-topo .sobremim-imgeu img:hover{
+    transform: scale(1.05);
+    transition: .5s;
+}
